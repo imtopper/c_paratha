@@ -1,3 +1,4 @@
+import 'package:chacha_paratha/Screens/BottomNav/bottom_nav.dart';
 import 'package:chacha_paratha/Widgets/UiHelper.dart';
 import 'package:chacha_paratha/Widgets/login_icons.dart';
 import 'package:chacha_paratha/Widgets/textInputfield.dart';
@@ -49,7 +50,9 @@ class _loginFormScreenState extends State<loginFormScreen> {
             SizedBox(
               height: 60,
             ),
-            UiHelper.customButton(callback: () {}, buttonname: 'Log in'),
+            UiHelper.customButton(callback: () { 
+              
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> BottomNavPage()));}, buttonname: 'Log in'),
             SizedBox(
               height: 20,
             ),

@@ -1,0 +1,2 @@
+/Users/sumit/Documents/suniti/chachaparatha/chacha_paratha/android/app/.cxx/Debug/35182hc2/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/sumit/Documents/suniti/chachaparatha/chacha_paratha/android/app/.cxx/Debug/35182hc2/armeabi-v7a/CMakeFiles/rebuild_cache.dir

@@ -34,4 +34,5 @@ class UiHelper {
       style: TextStyle(fontSize: height, color: color ?? Color(0xff646982), fontWeight: fontweight, fontFamily: 'sans'),
     );
   }
+
 }

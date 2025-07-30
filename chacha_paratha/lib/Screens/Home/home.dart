@@ -1,4 +1,5 @@
 import 'package:chacha_paratha/Widgets/UiHelper.dart';
+import 'package:chacha_paratha/Widgets/category.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -26,13 +27,14 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
-                  padding: EdgeInsets.all(4),
-                  decoration: BoxDecoration(color: Colors.grey.shade200, shape: BoxShape.circle),
+                  padding: EdgeInsets.all(2),
+                  decoration: BoxDecoration(
+                      color: Colors.grey.shade200, shape: BoxShape.circle),
                   child: Center(
                     child: IconButton(
                       icon: Icon(
                         Icons.menu,
-                        size: 27,
+                        size: 24,
                       ),
                       onPressed: () {
                         //   drawer:
@@ -87,16 +89,25 @@ class _HomePageState extends State<HomePage> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    UiHelper.customText(text: 'DELIVER TO', color: Colors.deepOrange, height: 16, fontweight: FontWeight.bold),
+                    UiHelper.customText(
+                        text: 'DELIVER TO',
+                        color: Colors.deepOrange,
+                        height: 16,
+                        fontweight: FontWeight.bold),
                     SizedBox(
                       height: 3,
                     ),
-                    UiHelper.customText(text: 'Neelum Palace, Bariatu', color: Colors.grey.shade500, height: 18, fontweight: FontWeight.bold),
+                    UiHelper.customText(
+                        text: 'Neelum Palace, Bariatu',
+                        color: Colors.grey.shade500,
+                        height: 18,
+                        fontweight: FontWeight.bold),
                   ],
                 ),
                 Container(
-                  padding: EdgeInsets.all(6),
-                  decoration: BoxDecoration(color: Colors.grey.shade200, shape: BoxShape.circle),
+                  padding: EdgeInsets.all(2),
+                  decoration: BoxDecoration(
+                      color: Colors.grey.shade200, shape: BoxShape.circle),
                   child: IconButton(
                       icon: Icon(
                         Icons.shopping_cart,
@@ -115,8 +126,13 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(
                   width: 25,
                 ),
-                UiHelper.customText(text: 'Hey Topper,', height: 20, color: Colors.black),
-                UiHelper.customText(text: ' Good Afternoon!', height: 20, color: Colors.black, fontweight: FontWeight.bold),
+                UiHelper.customText(
+                    text: 'Hey Topper,', height: 18, color: Colors.black),
+                UiHelper.customText(
+                    text: ' Good Afternoon!',
+                    height: 18,
+                    color: Colors.black,
+                    fontweight: FontWeight.bold),
               ],
             ),
 
@@ -138,7 +154,9 @@ class _HomePageState extends State<HomePage> {
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
-                  borderSide: BorderSide(color: const Color.fromARGB(255, 199, 194, 194), width: 1.5),
+                  borderSide: BorderSide(
+                      color: const Color.fromARGB(255, 119, 75, 75),
+                      width: 1.5),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
@@ -146,6 +164,80 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+
+            SizedBox(
+              height: 30,
+            ),
+            Row(
+              children: [
+                Column(
+                  children: [
+                    UiHelper.customText(
+                      text: 'All Categories',
+                      height: 22,
+                      color: Colors.black,
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                Column(
+                  children: [
+                    GestureDetector(
+                      child: UiHelper.customText(
+                        text: 'See all >',
+                        height: 16,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  categoryItem(
+                      imgUrl: 'assets/images/icons/category/drink.png',
+                      onTap: () {}),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  categoryItem(
+                      imgUrl: 'assets/images/icons/category/food.png',
+                      onTap: () {}),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  categoryItem(
+                      imgUrl: 'assets/images/icons/category/cupcake.png',
+                      onTap: () {}),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  categoryItem(
+                      imgUrl: 'assets/images/icons/category/ice-cream.png',
+                      onTap: () {}),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  categoryItem(
+                      imgUrl: 'assets/images/icons/category/snack.png',
+                      onTap: () {}),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  categoryItem(
+                      imgUrl: 'assets/images/icons/category/sweet.png',
+                      onTap: () {}),
+                ],
+              ),
+            )
           ],
         ),
       ),

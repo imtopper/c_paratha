@@ -28,6 +28,9 @@ flutter:
   assets:
     - assets/images/
     - assets/images/icons/
+    - assets/images/icons/navbar_icons/
+    - assets/images/icons/category/
+
 
 
 
