@@ -1,5 +1,5 @@
 import 'package:chacha_paratha/Widgets/UiHelper.dart';
-import 'package:chacha_paratha/Widgets/category.dart';
+import 'package:chacha_paratha/Widgets/category_item.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -166,7 +166,7 @@ class _HomePageState extends State<HomePage> {
             ),
 
             SizedBox(
-              height: 30,
+              height: 40,
             ),
             Row(
               children: [
@@ -183,6 +183,7 @@ class _HomePageState extends State<HomePage> {
                   width: 20,
                 ),
                 Column(
+                  //crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     GestureDetector(
                       child: UiHelper.customText(
@@ -203,42 +204,51 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   categoryItem(
-                      imgUrl: 'assets/images/icons/category/drink.png',
+                      imgUrl: 'assets/images/icons/category/drink-w.png',
+                      text: "Cold Drink",
                       onTap: () {}),
                   SizedBox(
                     width: 20,
                   ),
                   categoryItem(
-                      imgUrl: 'assets/images/icons/category/food.png',
+                      imgUrl: 'assets/images/icons/category/cooking-w.png',
+                      text: "Food",
                       onTap: () {}),
                   SizedBox(
                     width: 20,
                   ),
                   categoryItem(
-                      imgUrl: 'assets/images/icons/category/cupcake.png',
+                      imgUrl: 'assets/images/icons/category/snack-w.png',
+                      text: "Snack",
                       onTap: () {}),
                   SizedBox(
                     width: 20,
                   ),
                   categoryItem(
-                      imgUrl: 'assets/images/icons/category/ice-cream.png',
+                      imgUrl: 'assets/images/icons/category/ice-cream-w.png',
+                      text: "Ice-Cream",
+
                       onTap: () {}),
                   SizedBox(
                     width: 20,
                   ),
                   categoryItem(
-                      imgUrl: 'assets/images/icons/category/snack.png',
+                      imgUrl: 'assets/images/icons/category/cupcake-w.png',
+                      text: "Cake",
                       onTap: () {}),
                   SizedBox(
                     width: 20,
                   ),
                   categoryItem(
-                      imgUrl: 'assets/images/icons/category/sweet.png',
+                      imgUrl: 'assets/images/icons/category/gummy-w.png',
+                      text: "Sweet",
                       onTap: () {}),
                 ],
               ),
             )
           ],
+
+          
         ),
       ),
     );
