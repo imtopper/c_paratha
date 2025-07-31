@@ -11,20 +11,18 @@ class splashScreen extends StatefulWidget {
 class _splashScreenState extends State<splashScreen> {
   @override
   Widget build(BuildContext context) {
-    // Future.delayed(Duration(seconds: 3), () {
-    //   Navigator.pushReplacementNamed(context, '/onboarding');
-    // });
+    Future.delayed(Duration(seconds: 3), () {
+      Navigator.pushReplacementNamed(context, '/onboarding');
+    });
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset("assets/images/Logo.png", height: 20,),
+            Image.asset("assets/images/Logo.png", height: 150,),
 
-            SizedBox(
-              height: 10,
-            ),
+            
             UiHelper.customText(
               text: "Chacha Paratha",
               height: 24,
