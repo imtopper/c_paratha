@@ -34,8 +34,7 @@ class _ProfilePageState extends State<ProfilePage> {
               SizedBox(
                 height: 100,
               ),
-              Stack(
-                children: [
+              
                   Container(
                     height: 800,
                     width: double.infinity,
@@ -47,11 +46,13 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                   ),
-                  Positioned(top: 50,child: Container( height: 100, width: 100, decoration: BoxDecoration(color: Colors.amber, borderRadius: BorderRadius.all(Radius.circular(100),),),))
+                  
+              
                 ],
-              )
-            ],
+              ),
+              
+            
           ),
-        ));
+        );
   }
 }

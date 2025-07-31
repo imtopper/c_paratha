@@ -7,9 +7,14 @@ import 'package:chacha_paratha/Screens/Login/reset_code.dart';
 import 'package:chacha_paratha/Screens/Onboarding/onboardingScreen.dart';
 import 'package:chacha_paratha/Screens/SignUp/signup_form.dart';
 import 'package:chacha_paratha/Screens/Splash/splash.dart';
+import 'package:chacha_paratha/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 

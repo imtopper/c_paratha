@@ -75,20 +75,20 @@ class _signupFormScreenState extends State<signupFormScreen> {
                   imgUrl: 'assets/images/icons/google.png',
                   onTap: () {},
                 ),
-                SizedBox(
-                  width: 20,
-                ),
-                loginIconItem(
-                  imgUrl: 'assets/images/icons/facebook.png',
-                  onTap: () {},
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                loginIconItem(
-                  imgUrl: 'assets/images/icons/apple.png',
-                  onTap: () {},
-                )
+                // SizedBox(
+                //   width: 20,
+                // ),
+                // loginIconItem(
+                //   imgUrl: 'assets/images/icons/facebook.png',
+                //   onTap: () {},
+                // ),
+                // SizedBox(
+                //   width: 20,
+                // ),
+                // loginIconItem(
+                //   imgUrl: 'assets/images/icons/apple.png',
+                //   onTap: () {},
+                // )
               ],
             ),
             SizedBox(
